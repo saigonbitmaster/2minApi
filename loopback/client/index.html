@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+  </head>
+  <body>
+    <h1>2min APIs</h1>
+    <div> 
+      Sample fetch fund </br>
+      curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+        "name": "fund 9", \ 
+        "description": "string" \ 
+      }' 'http://localhost:3000/api/funds'
+    </br>
+      curl -X GET --header 'Accept: application/json' 'http://localhost:3000/api/funds'
+    </br>
+      curl -X GET --header 'Accept: application/json' 'http://localhost:3000/api/funds/624989beaba1732d32941998'
+    </br>
+      curl -X PUT --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ \ 
+        "name": "changeTo", \ 
+        "description": "string" \ 
+      }' 'http://localhost:3000/api/funds/624989beaba1732d32941998'
+    </br>   
+      curl -X DELETE --header 'Accept: application/json' 'http://localhost:3000/api/funds/123'
+    </br>  
+ 
+</br>    
+Models
+</br>  
+User
+</br>   
+      {
+        "realm": "string",
+        "username": "string",
+        "email": "string@abc.com",
+        "emailVerified": true,
+      "password": "123456"
+       
+      }
+    </br>    
+    fund
+    </br>  
+      {
+        "name": "string",
+        "id": "string",
+        "description": "string"
+      }
+    </br>    
+    Challenge
+    </br>   
+      {
+        "name": "string",
+        "id": "string",
+        "description": "string",
+        "fundId": "string"
+      }
+    </br>    
+    idea/Proposal
+    </br>   
+      {
+        "name": "string",
+        "problem": "string",
+        "solution": "string",
+        "web": "string",
+        "youtube": "string",
+        "requestedFunds": "string",
+        "impact": "string",
+        "auditability": "string",
+        "id": "string",
+        "challengeId": "string"
+      }
+    </br>    
+    review/Assessment
+    </br>  
+    {
+      "name": "string",
+      "impact": "string",
+      "impactScore": "string",
+      "feasibility": "string",
+      "feasibilityScore": "string",
+      "auditability": "string",
+      "auditabilityScore": "string",
+      "id": "string",
+      "userId": "string",
+      "ideaId": "string"
+    }
+    </div>
+   
+  </body>
+</html>
