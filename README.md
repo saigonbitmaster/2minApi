@@ -1,2 +1,9 @@
-# 2min api
-http://13.213.178.235:3000/
+## Install & run
+
+```
+git clone https://github.com/saigonbitmaster/2minApi
+cd 2minApi
+update .env files
+yarn
+yarn api
+```

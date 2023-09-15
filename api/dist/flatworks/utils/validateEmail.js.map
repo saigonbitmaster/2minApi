@@ -1,0 +1,1 @@
+{"version":3,"file":"validateEmail.js","sourceRoot":"","sources":["../../../src/flatworks/utils/validateEmail.ts"],"names":[],"mappings":";;;AAAA,MAAM,aAAa,GAAG,CAAC,KAAa,EAAW,EAAE;IAC/C,MAAM,EAAE,GAAG,cAAc,CAAC;IAC1B,OAAO,EAAE,CAAC,IAAI,CAAC,KAAK,CAAC,CAAC;AACxB,CAAC,CAAC;AAEO,sCAAa"}

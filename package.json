@@ -1,21 +1,18 @@
 {
   "name": "2min",
-  "scripts": {
-    "server": "cd loopback && node ."
-  },
-  "version": "1.0.0",
-  "repository": "https://github.com/saigonbitmaster/reportEngine",
-  "author": "saigonBitMaster <bitmaster.sg@gmail.com>",
-  "license": "MIT",
+  "version": "2.0.0",
   "private": true,
   "workspaces": [
-    "loopback"
+    "api",
+    "packages/*"
   ],
-  "dependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/node": "^7.14.9",
-    "@babel/preset-env": "^7.15.0",
-    "@mui/styles": "^5.0.1",
-    "loopback-connector-mysql": "^5.4.4"
+  "main": "index.js",
+  "scripts": {
+    "api": "cd api && yarn start",
+    "build-api": "cd api && yarn build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
